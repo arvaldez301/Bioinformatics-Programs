@@ -2,6 +2,18 @@
 
 Here you will learn everything from basic terminal commands to Python and R! Below will be some onboarding tutorials for each of the programs to get you started.
 
+## Python
+### Installation
+In order to run Python code, you must have it installed on your computer. At the following link you can find the most recent version of Python ready to download
+
+https://www.python.org/downloads/
+
+Once you have Python downloaded, we will also download Jupyter Lab. This is a prgram that makes it very easy to create, save, and run Python codes. Through the Jupyter Lab, you will be able to access iPython and Terminal all within a single program.
+
+
+
+## R Studio
+
 ## Onboarding for Terminal (Bash Scripting)
 ### Logging in
 To access Mana you must log into the shell. Password entry is Case sensitive and it may prompt you to complete a DuoPush
