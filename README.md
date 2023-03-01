@@ -9,7 +9,9 @@ To access Mana you must log into the shell. Password entry is Case sensitive and
 ssh <username>@uhhpc.its.hawaii.edu
 ```
 Once you are done workign in the shell you can simply type ```exit``` and it will log you out.
+
 ### Navigating through the Cluster
+
 Next we want to look at any files that we have stored in our system.
 ```
 ls
@@ -63,6 +65,7 @@ In your home directory, you can make a new directory and navigate to it using
 mkdir <name you would like to give it>
 cd <name of directory>
 ```
+
 ### Moving, copying, and removing files
 
 The move command - mv
@@ -100,11 +103,71 @@ rm my_renamed_file.txt
 # remove a directory with the -r option, recursive
 rm -r my_directory/
 ```
+
 ### Finding help for a command
+
 At any point you can as for help by typing ```--help``` after a command. For example, ```ls --help``` will give you information on how to use ```ls```. A lot of commands also have a lot of documentation and additional tutorials online.
+
 ### Editing files
+
 There are many ways to view and editing text files but ```nano``` is the simplest. Let's test it out on the file that we made earlier
 ```
 nano test.txt
 ```
-Type some text into the file space and then hit ```ctrl + x```
+Type some text into the file space and then hit ```ctrl + x``` to save and exit the editor. Prompts at the bottom of the editor will help guide you through the saving process.
+
+You can view, but not edit, files using ```less```
+```
+less -S test.txt
+```
+Using ```-S``` will keep the information on a single line rather than wrapping at the end of the screen.
+
+There are a few other ways that you can view files. ```head``` or ```tail``` at the start or end of the file can also help you view your document. If you want to view the entire document you can call
+``` 
+cat test.txt
+```
+But be careful doign this with larger files as it can take forever to complete this command. If this happens you can use ```ctrl + c``` to interupt the terminal.
+
+### Searching through a file
+
+**grep** is a tool that allows you to search through a file for a specified string. 
+```
+
+grep "my search string" file.txt
+
+# have a zipped file?
+zgrep "my search string" file.txt.gz
+
+# count the number of lines that contain the search string.
+grep -c "my search string" file.txt
+
+# diplay the lines that don't contain the search term.
+grep -v "my search string" file.txt
+```
+### Interactive sessions
+
+To avoid working in the login node, where it might be too busy with everyone on, you move onto a compute node. To do this, you will use the ```salloc``` command. ```-A``` allows you to specify the project you are working wiht so that usage and priority can be properly monitored. ```-t``` specifies how long you wish to have the interactive session open for (format is DAYS-HOURS:MINUTES:SECONDS). This examples specifies the session to use 10GB of memory and 2 cores.
+```
+salloc -A <project name> -t 0-03:00 --mem=10G --cpus-per-tast=2
+```
+Once the session has been allocated and is running, you can begin entering commands on the command line using the resources you requested.
+
+When you are done running the session you can enter ```exit``` to leave the interactive session and return to your login node. Calling ```exit``` again will log you out of Mana.
+
+### Modules
+
+Modules are pieces or collections of software that are installed on Mana. There are a lot of programs that are already installed and avalible for us to use. Instead of loading all of the software available each time that you log in, loading individual programs as you need is a lot easier.
+
+Some basic commands for modules:
+```
+#see a (non-comprehensive) list of available modules
+module avail
+# search for a specific module and see info on how to load it, here the program bwa
+module spider bwa
+# load up the bwa module with it's dependcy gcc:
+module load gcc/11.2.0 bwa/0.7.17
+# See all loaded modules:
+module list
+# Reset modules to default
+module reset
+```
