@@ -132,7 +132,6 @@ But be careful doign this with larger files as it can take forever to complete t
 
 **grep** is a tool that allows you to search through a file for a specified string. 
 ```
-
 grep "my search string" file.txt
 
 # have a zipped file?
