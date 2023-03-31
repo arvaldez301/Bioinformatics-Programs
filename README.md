@@ -13,7 +13,7 @@ Once you have Python downloaded, we will also download Jupyter Lab. This is a pr
 
 
 ## R Studio
-To install R studio there are two programs that you must download. One being the core R software and the other being R studio where you wil conduct all of your R coding.
+To begin workign with R studio there are two programs that you must download. One being the core R software and the other being R studio where you wil conduct all of your R coding.
 
 http://cran.r-project.org/
 
