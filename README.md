@@ -11,7 +11,6 @@ https://www.python.org/downloads/
 Once you have Python downloaded, we will also download Jupyter Lab. This is a prgram that makes it very easy to create, save, and run Python codes. Through the Jupyter Lab, you will be able to access iPython and Terminal all within a single program.
 
 
-
 ## R Studio
 To begin workign with R studio there are two programs that you must download. One being the core R software and the other being R studio where you wil conduct all of your R coding.
 
@@ -20,6 +19,8 @@ http://cran.r-project.org/
 http://rstudio.com
 
 R Studio also allows you to create Python scripts and run Terminal.
+
+You can find R Programming Basics within this repository.
 
 ## Onboarding for Terminal (Bash Scripting)
 ### Logging in
