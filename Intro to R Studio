@@ -1,11 +1,12 @@
-# Intro-to-R
+Intro-to-R
 Introduction to Beginner R Programing
 
 Here you will learn everything from basic R commands! Below you will find some steps to help get you comfortable with R Studion
 
-## Basics
+Basics
 Within R, you are able to preform basic mathematical functions.
-```
+
+```{r}
 # Calculate 3 + 4
 3 + 4
 
