@@ -1,6 +1,6 @@
 # Bioinformatics-INBRE
 
-Here you will learn everything from basic terminal commands to Python and R! Below will be some onboarding tutorials for each of the programs to get you started.
+(course description). Below you can find a brief tutorial on how install Python and R Studio programs. You can also find a brief introduction on how to use Terminal, another form of programming.
 
 ## Python
 ### Installation
