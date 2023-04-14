@@ -2,16 +2,8 @@
 
 (course description). Below you can find a brief tutorial on how install Python and R Studio programs. You can also find a brief introduction on how to use Terminal, another form of programming.
 
-## Python
-### Installation
-In order to run Python code, you must have it installed on your computer. At the following link you can find the most recent version of Python ready to download
-
-https://www.python.org/downloads/
-
-Once you have Python downloaded, we will also download Jupyter Lab. This is a prgram that makes it very easy to create, save, and run Python codes. Through the Jupyter Lab, you will be able to access iPython and Terminal all within a single program.
-
-
 ## R Studio
+### Installation
 To begin workign with R studio there are two programs that you must download. One being the core R software and the other being R studio where you wil conduct all of your R coding.
 
 http://cran.r-project.org/
@@ -20,7 +12,15 @@ http://rstudio.com
 
 R Studio also allows you to create Python scripts and run Terminal.
 
-You can find R Programming Basics within this repository.
+A rundown of the Basics of R Program can be found at https://github.com/arvaldez301/Intro-to-R.git
+
+## Python
+### Installation
+In order to run Python code, you must have it installed on your computer. At the following link you can find the most recent version of Python ready to download
+
+https://www.python.org/downloads/
+
+Once you have Python downloaded, we will also download Jupyter Lab. This is a prgram that makes it very easy to create, save, and run Python codes. Through the Jupyter Lab, you will be able to access iPython and Terminal all within a single program.
 
 ## Onboarding for Terminal (Bash Scripting)
 ### Logging in
