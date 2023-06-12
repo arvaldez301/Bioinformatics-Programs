@@ -1,4 +1,4 @@
-# Bioinformatics-INTRO
+# Bioinformatics-Programs Intro
 
 (course description). Below you can find a brief tutorial on how install Python and R Studio programs. You can also find a brief introduction on how to use Terminal, another form of programming.
 
